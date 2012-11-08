@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.8'
 
 gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bootstrap-sass'
 gem 'dalli'
 gem 'decent_exposure'
 gem 'devise'
@@ -22,7 +23,7 @@ end
 
 group :development do
 	gem 'rspec'
-	gem 'mysql'
+	gem 'mysql2'
 end
 
 group :production do
