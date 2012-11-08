@@ -12,7 +12,7 @@ gem 'kaminari'
 gem 'oauth2'
 gem 'omniauth'
 gem 'omniauth-facebook'
-gem 'permanent_records'
+#gem 'permanent_records'
 gem 'thin'
 
 group :assets do
@@ -22,6 +22,7 @@ group :assets do
 end
 
 group :development do
+	gem 'annotate'
 	gem 'rspec'
 	gem 'mysql2'
 end

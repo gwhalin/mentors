@@ -50,6 +50,14 @@ p {
 	line-height: 1.7em;
 }
 
+.alert {
+	text-align: center;
+}
+
+.notice {
+	@extend .alert;
+}
+
 #logo {
 	float: left;
 	margin-right: 10px;

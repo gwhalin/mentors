@@ -2,5 +2,7 @@
 	<h1>Mentor</h1>
 	<h2>Blah blah blah</h2>
 
-	<%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
+	<% unless member_signed_in? -%>
+		<%= link_to "Login now!", login_path, class: "btn btn-large btn-primary" %>
+	<% end -%>
 </div>
