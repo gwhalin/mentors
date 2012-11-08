@@ -31,5 +31,10 @@ class Member < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me,
-									:first_name, :last_name, :username
+									:first_name, :last_name, :username, :status
+
+	VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+	validates :email, presence: true, format: { with: VALID_EMAIL_REGEX }, uniqueness: { case_sensitive: false }
+
+	before_save { |member| member.email = member.downcase }
 end
