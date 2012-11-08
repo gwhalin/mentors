@@ -1,5 +1,18 @@
 source 'https://rubygems.org'
+
 gem 'rails', '3.2.8'
+
+gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'dalli'
+gem 'decent_exposure'
+gem 'devise'
+gem 'jquery-rails'
+gem 'kaminari'
+gem 'oauth2'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'permanent_records'
+gem 'thin'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -10,17 +23,9 @@ end
 group :development do
 	gem 'rspec'
 	gem 'sqlite3'
+	gem 'mysql2'
 end
 
-gem 'bcrypt-ruby', '~> 3.0.0'
-gem 'dalli'
-gem 'decent_exposure'
-gem 'devise'
-gem 'jquery-rails'
-gem 'kaminari'
-gem 'mysql2'
-gem 'oauth2'
-gem 'omniauth'
-gem 'omniauth-facebook'
-gem 'permanent_records'
-gem 'thin'
+group :production do
+	gem 'pg'
+end

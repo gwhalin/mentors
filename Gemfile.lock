@@ -92,6 +92,7 @@ GEM
     orm_adapter (0.4.0)
     permanent_records (2.3.0)
       activerecord
+    pg (0.14.1)
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.2)
@@ -168,6 +169,7 @@ DEPENDENCIES
   omniauth
   omniauth-facebook
   permanent_records
+  pg
   rails (= 3.2.8)
   rspec
   sass-rails (~> 3.2.3)
