@@ -22,8 +22,7 @@ end
 
 group :development do
 	gem 'rspec'
-	gem 'sqlite3'
-	gem 'mysql2'
+	gem 'mysql'
 end
 
 group :production do

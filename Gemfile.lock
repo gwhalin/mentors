@@ -72,9 +72,9 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.19)
-    multi_json (1.3.6)
+    multi_json (1.3.7)
     multipart-post (1.1.5)
-    mysql2 (0.3.11)
+    mysql (2.8.2)
     oauth2 (0.8.0)
       faraday (~> 0.8)
       httpauth (~> 0.1)
@@ -127,7 +127,7 @@ GEM
     rspec-expectations (2.11.3)
       diff-lcs (~> 1.1.3)
     rspec-mocks (2.11.3)
-    sass (3.2.1)
+    sass (3.2.2)
     sass-rails (3.2.5)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
@@ -136,7 +136,6 @@ GEM
       hike (~> 1.2)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sqlite3 (1.3.6)
     thin (1.5.0)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
@@ -146,7 +145,7 @@ GEM
     treetop (1.4.12)
       polyglot
       polyglot (>= 0.3.1)
-    tzinfo (0.3.34)
+    tzinfo (0.3.35)
     uglifier (1.3.0)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
@@ -164,7 +163,7 @@ DEPENDENCIES
   devise
   jquery-rails
   kaminari
-  mysql2
+  mysql
   oauth2
   omniauth
   omniauth-facebook
@@ -173,6 +172,5 @@ DEPENDENCIES
   rails (= 3.2.8)
   rspec
   sass-rails (~> 3.2.3)
-  sqlite3
   thin
   uglifier (>= 1.0.3)
