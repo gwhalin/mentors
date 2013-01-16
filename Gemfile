@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.8'
+gem 'rails', '3.2.11'
 
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'bootstrap-sass'
@@ -11,7 +11,9 @@ gem 'jquery-rails'
 gem 'kaminari'
 gem 'oauth2'
 gem 'omniauth'
-gem 'omniauth-facebook'
+gem 'omniauth-linkedin'
+gem 'linkedin'
+#gem 'omniauth-facebook'
 #gem 'permanent_records'
 gem 'thin'
 
