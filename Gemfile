@@ -16,7 +16,9 @@ gem 'omniauth-linkedin'
 gem 'linkedin'
 #gem 'omniauth-facebook'
 #gem 'permanent_records'
-gem 'thin'
+
+#gem 'thin'
+gem 'unicorn'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
