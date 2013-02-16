@@ -17,9 +17,6 @@ gem 'linkedin'
 #gem 'omniauth-facebook'
 #gem 'permanent_records'
 
-#gem 'thin'
-gem 'unicorn'
-
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
@@ -27,6 +24,7 @@ group :assets do
 end
 
 group :development do
+	gem 'thin'
 	gem 'annotate'
 	gem 'rspec'
 	gem 'mysql2'
@@ -34,4 +32,5 @@ end
 
 group :production do
 	gem 'pg'
+	gem 'unicorn'
 end
